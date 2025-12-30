@@ -1,0 +1,79 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}
+.main{background-color: pink;padding-top:40px ;padding:40px 10px 0px 10px}
+#section-tittle{text-align: center;padding-top:50px ;}
+.card,#header #container,img{box-shadow: 3px 3px 3px black}
+
+
+#header #container{border: 5px solid white;margin: auto;max-width: 900px;display: flex;align-items: center;border-radius:10px}
+#img-div img{width:300px;height:300px}
+#header #container #content{flex-basis: 70%;text-align: center}
+#header #container #img-div {flex-basis: 30%}
+#header #container #content h3,h1,p{margin-bottom: 20px;color:white}
+#header #container #content h3{letter-spacing: 5px}
+#container{background-color: #32517D}
+#social-icon a{margin: 10px;font-size: 30px}
+#social-icon a:nth-child(1) {color:red}
+#social-icon a:nth-child(3) {color:red}
+#social-icon a:nth-child(2) {color:blue;}
+
+
+#aboutme .container .img-div{flex-basis: 50%;}
+#aboutme .container .content{flex-basis: 50%}
+#aboutme .container {max-width:900px;margin: auto;display:flex;align-items: center;padding-top: 10px}
+.img-div img{width:130px;height:130px;border-radius: 50%;display:block;margin: auto}
+#aboutme .container .content h2{line-height: 45px;}
+
+
+
+
+#myskill .container .img-div{flex-basis: 50%;}
+#myskill .container .content{flex-basis: 50%}
+#myskill .container{;max-width:900px;margin: auto;display:flex;align-items: center;}
+#myskill .container .img-div img{width:300px;height:200px;border-radius: 3px;}
+#myskill .content ul li{list-style-type: none;background-color:white;display: inline-block;margin: 5px 7px 5px 0px;padding:8px 15px;border-radius: 3px;font-size: 10px}
+#myskill .content h2{margin-top: 10px}
+
+
+
+#myworks .container{max-width:900px;margin: auto;justify-content:space-between;display:flex;}
+#myworks .container .card{flex-basis: 30%;border-radius: 20px;text-align: center;padding:10px;background-color: #32517D;color:white;cursor:pointer;}
+#myworks .container .card h3{margin: 20px 0px}
+#myworks .container .card i{margin-top: 10px;font-size: 30px}
+#myworks .container .card:hover{background-color:gray;transform: scale(1.1);transition-duration: 1s}
+
+
+#contactme .container{max-width:900px;margin:auto;display:flex;}
+#contactme .container .box{flex-basis: 50%;}
+#contactme .container .content{flex-basis: 50%}
+#contactme .container .content ul{margin-left: 20px;line-height: 40px}
+#contactme .container .box{line-height: 30px}
+#contactme .container .box buttom{background-color: #32517D;float: right;padding: 5px 15px;border-radius: 8px}
+#contactme .container .box  #input input{flex-basis: 45%;height: 40px;border-radius: 8px}
+#contactme .container .box  #input {display: flex;justify-content: space-between;margin-bottom: 10px}
+#contactme .container .box textarea{border-radius:8px}
+
+
+#footer{background-color: #32517D;color: white;padding: 20px 0px 50px 0px;margin-top: 20px}
+#footer .container {max-width:900px;margin: auto;display:flex;justify-content:space-between;margin-top: 20px}
+#footer .container .column{flex-basis: 30%;border-radius: 20px;text-align: center;padding:10px;}
+#footer .container .column h3{margin-bottom: 25px}
+#footer .container .column p{line-height: 5px}
+#footer .container .column a{font-size: 30px;margin: 0px 10px}
+#social-icon a:nth-child(1) {color:red}
+#social-icon a:nth-child(3) {color:red}
+#social-icon a:nth-child(2) {color:blue;}
+
+
+
+
+@media (max-width: 600px){
+	.main{background-color: yellow}
+	#header #container{flex-direction:column column-reverse;}
+	 #aboutme .container{flex-direction:column;text-align: center}
+	 #myskill .container{flex-direction:column;}
+	
+	#myworks .container {flex-direction:column;width:400px;}
+    #myworks .container .card{margin: 20px auto}
+  #contactme .container {flex-direction:column;text-align: center}
+   #contactme .container .class #input{flex-direction:column;margin: 20px;height: 60px}
+}
